@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* -------------------------------
+FIX: Prevent dark overlay blocking UI
+-------------------------------- */
+
+.fixed.inset-0 {
+  pointer-events: none !important;
+}
+
+.bg-black.bg-opacity-50 {
+  display: none !important;
+}
